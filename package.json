@@ -1,0 +1,33 @@
+{
+  "name": "nexus-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --transpile-only --no-notify src/index.ts",
+    "build": "tsc",
+    "generate": "ts-node --transpile-only src/api/schema.ts",
+    "test": "npm run generate && jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^2.25.0",
+    "apollo-server": "^2.25.1",
+    "graphql": "^15.5.0",
+    "graphql-iso-date": "^3.6.1",
+    "nexus": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/graphql-iso-date": "^3.4.0",
+    "@types/jest": "^26.0.23",
+    "get-port": "^5.1.1",
+    "graphql-request": "^3.4.0",
+    "jest": "^27.0.4",
+    "prisma": "^2.25.0",
+    "ts-jest": "^27.0.3",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  }
+}
